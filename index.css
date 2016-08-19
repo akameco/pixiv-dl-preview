@@ -1,0 +1,62 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 100%;
+	-webkit-app-region: drag;
+}
+
+body {
+	height: 100%;
+	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header {
+	position: absolute;
+	width: 500px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -250px;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 60px;
+	font-weight: 100;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.main {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+img {
+	outline:none;
+	opacity: 0;
+	animation: fade-in .5s alternate both;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

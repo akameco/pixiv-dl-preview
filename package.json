@@ -1,0 +1,50 @@
+{
+  "name": "pixiv-dl-preview",
+  "productName": "PixivDlPreview",
+  "version": "0.0.0",
+  "description": "pixiv downloader with image preview",
+  "license": "MIT",
+  "repository": "akameco/pixiv-dl-preview",
+  "author": {
+    "name": "akameco",
+    "email": "akameco.t@gmail.com",
+    "url": "akameco.github.io"
+  },
+  "bin": "cli.js",
+  "scripts": {
+    "test": "xo",
+    "start": "electron ."
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "chokidar": "^1.6.0",
+    "conf": "^0.11.2",
+    "delay": "^1.3.1",
+    "electron-config": "^0.2.1",
+    "electron-prebuilt": "^1.3.3",
+    "electron-window-state": "^3.0.3",
+    "meow": "^3.7.0",
+    "pixiv-dl": "^0.5.0",
+    "update-notifier": "^1.0.2"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron-packager": "^7.0.0",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
