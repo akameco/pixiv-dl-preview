@@ -18,7 +18,7 @@ const cli = meow(`
 	  --password, -p  pixiv password (use cache)↲
 	  --output, -o    output directory [Default: curret dir]
 	  --name, -n      custom filename
-	  --delay, -d     delay time (ms) [Default: 3000]
+	  --delay, -d     delay time (ms) [Default: 5000]
 	  ranking         ranking mode
 	    day | week | month | day_male | day_female | week_original | week_rookie | day_mang
 	    day_r18 | day_male_r18 | day_female_r18 | week_r18 | week_r18g
@@ -37,7 +37,7 @@ const cli = meow(`
 	},
 	default: {
 		output: process.cwd(),
-		delay: 3000
+		delay: 5000
 	}
 });
 
