@@ -11,7 +11,7 @@ const config = new Conf();
 
 const cli = meow(`
 	Usage
-	  $ pixiv-dl [input]
+	  $ pixiv-dl-preview [input]
 
 	Options
 	  --uername, -u   pixiv username (use cache)↲
@@ -24,9 +24,9 @@ const cli = meow(`
 	    day_r18 | day_male_r18 | day_female_r18 | week_r18 | week_r18g
 
 	Examples
-	  $ pixiv-dl リゼロ10000users入り --username hoge --password fuga
-	  $ pixiv-dl リゼロ10000users入り --output rezero --name user.account-title
-	  $ pixiv-dl ranking day --output rezero --name user.account-title
+	  $ pixiv-dl-preview リゼロ10000users入り --username hoge --password fuga
+	  $ pixiv-dl-preview リゼロ10000users入り --output rezero --name user.account-title
+	  $ pixiv-dl-preview ranking day --output rezero --name user.account-title
 `, {
 	alias: {
 		output: 'o',
