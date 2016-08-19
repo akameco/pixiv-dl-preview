@@ -1,7 +1,7 @@
 {
   "name": "pixiv-dl-preview",
   "productName": "PixivDlPreview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "pixiv downloader with image preview",
   "license": "MIT",
   "repository": "akameco/pixiv-dl-preview",
