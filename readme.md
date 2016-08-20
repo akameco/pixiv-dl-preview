@@ -2,6 +2,8 @@
 
 > pixiv downloader with image preview
 
+<img src="screenshot.gif">
+
 ## Install
 
 ```
