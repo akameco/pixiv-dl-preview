@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 'use strict';
 const spawn = require('child_process').spawn;
-const meow = require('meow');
+const electron = require('electron');
 const updateNotifier = require('update-notifier');
 const Conf = require('conf');
-const electron = require('electron-prebuilt');
 const pixivDl = require('pixiv-dl');
+const meow = require('meow');
 
 const config = new Conf();
 
@@ -67,6 +67,9 @@ const ps = spawn(electron, [__dirname, opts.output], {stdio: 'inherit'});
 pixivDl(cli.input[0], opts).then(() => {
 	ps.kill('SIGHUP');
 	process.exit(0);
+}).catch(err => {
+	console.error(err);
+	process.exit(1);
 });
 
 config.set('username', opts.username);
