@@ -1,5 +1,7 @@
 # pixiv-dl-preview
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/akameco/pixiv-dl-preview.svg)](https://greenkeeper.io/)
+
 > pixiv downloader with image preview
 
 <img src="screenshot.gif">
